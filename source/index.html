@@ -8,9 +8,12 @@
   <meta name="description" content="Стажировка. Акселератор Фронтенд-Разработчик. Профессия за рубежом.">
   <title>Стажировка. Профессия за рубежом.</title>
   <link rel="stylesheet" href="sass/style.scss">
-  <link rel="preload" href="fonts/manrope-v15-cyrillic_latin-500.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/manrope-v15-cyrillic_latin-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/manrope-v15-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/manrope-v15-cyrillic_latin-500.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/manrope-v15-cyrillic_latin-400.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/manrope-v15-cyrillic_latin-regular.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon/favicon-apple.png">
@@ -18,16 +21,180 @@
 </head>
 
 <body>
-  <div data-test="slider">slider</div>
-  <div data-test="about">about</div>
-  <div data-test="programs">programs</div>
-  <div data-test="grant">grant</div>
-  <div data-test="news">news</div>
-  <div data-test="FAQ">FAQ</div>
-  <div data-test="reviews">reviews</div>
-  <div data-test="contacts">contacts</div>
-  <div data-test="form">form</div>
-  <div data-test="footer">footer</div>
+  <div class="wrapper">
+    <header class="header" data-test="slider">
+      <h1 class="visually-hidden">Стажировка. Профессия за рубежом.</h1>
+      <nav class="header__navigation container">
+        <div class="navigation__wrapper">
+          <a class="navigation__logo" href="#" aria-label="Логотип сайта Стажировка.">
+            <svg width="30" height="30" viewBox="0 0 30 30" role="img">
+              <use href="__spritemap#sprite-logotype"></use>
+            </svg>
+          </a>
+          <span>меню</span>
+          <button class="navigation__button btn btn--burger-button" type="button">
+            <svg width="18" height="8" viewBox="0 0 18 8" role="img" focusable="false" aria-hidden="true">
+              <use href="__spritemap#sprite-menu-button"></use>
+            </svg>
+            <svg width="16" height="16" viewBox="0 0 16 16" role="img" focusable="false" aria-hidden="true">
+              <use href="__spritemap#sprite-menu-closed"></use>
+            </svg>
+          </button>
+          <div class="navigation__menu">
+            <ul class="navigation__menu-list">
+              <li class="navigation__menu-item">
+                <a class="navigation__menu-link" href="#">О проекте</a>
+              </li>
+              <li class="navigation__menu-item">
+                <span>Программы</span>
+                <ul class="navigation__internal-list">
+                  <li class="navigation__internal-item">
+                    <a class="navigation__internal-link" href="#">Стажировки</a>
+                  </li>
+                  <li class="navigation__internal-item">
+                    <a class="navigation__internal-link" href="#">Волонтёрство</a>
+                  </li>
+                  <li class="navigation__internal-item">
+                    <a class="navigation__internal-link" href="#">Учёба</a>
+                  </li>
+                  <li class="navigation__internal-item">
+                    <a class="navigation__internal-link" href="#">Религия</a>
+                  </li>
+                </ul>
+                <div class="navigation__menu-image">
+                  <svg width="10" height="5" viewBox="0 0 10 5" role="img" focusable="false" aria-hidden="true">
+                    <use href="__spritemap#sprite-up-arrow"></use>
+                  </svg>
+                  <svg width="10" height="5" viewBox="0 0 10 5" role="img" focusable="false" aria-hidden="true">
+                    <use href="__spritemap#sprite-down-arrow"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="navigation__menu-item">
+                <a class="navigation__menu-link" href="#">как поехать</a>
+              </li>
+              <li class="navigation__menu-item">
+                <a class="navigation__menu-link" href="#">отзывы</a>
+              </li>
+              <li class="navigation__menu-item">
+                <a class="navigation__menu-link" href="#">
+                  <span>новости</span>
+                </a>
+                <ul class="navigation__internal-list">
+                  <li class="navigation__internal-item">
+                    <a class="navigation__internal-link" href="#">общее</a>
+                  </li>
+                  <li class="navigation__internal-item">
+                    <a class="navigation__internal-link" href="#">Волонтёрство</a>
+                  </li>
+                  <li class="navigation__internal-item">
+                    <a class="navigation__internal-link" href="#">Стажировки</a>
+                  </li>
+                  <li>
+                    <a class="navigation__internal-link" href="#">Карьера</a>
+                  </li>
+                  <li class="navigation__internal-item">
+                    <a class="navigation__internal-link" href="#">путешествия</a>
+                  </li>
+                </ul>
+                <div class="navigation__menu-image">
+                  <svg width="10" height="5" viewBox="0 0 10 5" role="img" focusable="false" aria-hidden="true">
+                    <use href="__spritemap#sprite-up-arrow"></use>
+                  </svg>
+                  <svg width="10" height="5" viewBox="0 0 10 5" role="img" focusable="false" aria-hidden="true">
+                    <use href="__spritemap#sprite-down-arrow"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="navigation__menu-item">
+                <a class="navigation__menu-link" href="#">контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="hero">
+        <h2 class="visually-hidden">Список предложений</h2>
+        <div class="hero__slider container">
+          <div class="hero__pagination"></div>
+          <ul class="hero__list">
+            <li class="hero__item">
+              <h3>Глобальный профессиональный
+                опыт обучения за рубежом</h3>
+              <p>Погрузитесь в академическую программу, проходя практику в разных городах, ощущая настоящий студенческий стиль жизни!</p>
+              <a href="#">
+                <samp>подробнее</samp>
+                <svg width="8" height="8" viewBox="0 0 8 8" role="img" focusable="false" aria-hidden="true">
+                  <use href="__spritemap#sprite-side-arrow"></use>
+                </svg>
+              </a>
+              <div class="hero__image">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" width="320" heigth="568" srcset="./img/site-content/slider-images/slide-1-mobile@1x.webp 1x, ./img/site-content/slider-images/slide-1-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1439px)" width="768" heigth="1024" srcset="./img/site-content/slider-images/slide-1-tablet@1x.webp 1x, ./img/site-content/slider-images/slide-1-tablet@2x.webp 2x">
+                  <source type="image/webp" width="1400" height="800" srcset="./img/site-content/slider-images/slide-1-desktop@1x.webp 1x, ./img/site-content/slider-images/slide-1-desktop@2x.webp 2x">
+                  <source type="image/jpg" media="(max-width: 767px)" width="320" heigth="568" srcset="./img/site-content/slider-images/slide-1-mobile@1x.jpg 1x, ./img/site-content/slider-images/slide-1-mobile@2x.jpg 2x">
+                  <source type="image/jpg" media="(max-width: 1439px)" width="768" heigth="1024" srcset="./img/site-content/slider-images/slide-1-tablet@1x.jpg 1x, ./img/site-content/slider-images/slide-1-tablet@2x.jpg 2x">
+                  <img src="./img/site-content/slider-images/slide-1-desktop@1x.jpg" width="1440" height="800" srcset="./img/site-content/slider-images/slide-1-desktop@2x.jpg 2x" alt="Фотография студентки обучающаяся за рубежом.">
+                </picture>
+              </div>
+            </li>
+            <li class="hero__item">
+              <h3>Волонтёрские программы –
+                внесите свой вклад в общество</h3>
+              <p>Возможности для преподавания, органического сельского хозяйства, устойчивого образа жизни и другое.</p>
+              <a href="#">
+                <samp>подробнее</samp>
+                <svg width="8" height="8" viewBox="0 0 8 8" role="img" focusable="false" aria-hidden="true">
+                  <use href="__spritemap#sprite-side-arrow"></use>
+                </svg>
+              </a>
+              <div class="hero__image">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" width="320" heigth="568" srcset="./img/site-content/slider-images/slide-2-mobile@1x.webp 1x, ./img/site-content/slider-images/slide-2-mobile@1x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1439px)" width="768" heigth="1024" srcset="./img/site-content/slider-images/slide-2-tablet@1x.webp 1x, ./img/site-content/slider-images/slide-2-tablet@2x.webp 2x">
+                  <source type="image/webp" width="1440" heigth="800" srcset="./img/site-content/slider-images/slide-2-desktop@1x.webp 1x, ./img/site-content/slider-images/slide-2-desktop@2x.webp 2x">
+                  <source type="image/jpg" media="(max-width: 767px)" width="320" heigth="568" srcset="./img/site-content/slider-images/slide-2-mobile@1x.jpg 1x, ./img/site-content/slider-images/slide-2-mobile@2x.jpg 2x">
+                  <source type="image/jpg" media="(max-width: 1439px)" width="768" heigth="1024" srcset="./img/site-content/slider-images/slide-2-tablet@1x.jpg 1x, ./img/site-content/slider-images/slide-2-tablet@2x.jpg 2x">
+                  <img src="./img/site-content/slider-images/slide-2-desktop@1x.jpg" width="1440px" height="800" srcset="./img/site-content/slider-images/slide-2-desktop@2x.jpg 2x" alt="Фотография наших волонтеров">
+                </picture>
+              </div>
+            </li>
+            <li class="hero__item">
+              <h3>Программы стажировок
+                в крупнейших компаниях мира</h3>
+              <p>Получите незаменимый опыт работы в ведущих  мировых компаниях и государственных организациях.</p>
+              <a href="#">
+                <samp>подробнее</samp>
+                <svg width="8" height="8" viewBox="0 0 8 8" role="img" focusable="false" aria-hidden="true">
+                  <use href="__spritemap#sprite-side-arrow"></use>
+                </svg>
+              </a>
+              <div class="hero__image">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" width="320" heigth="568" srcset="./img/site-content/slider-images/slide-3-mobile@1x.webp 1x, ./img/site-content/slider-images/slide-3-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1439px)" width="768" heigth="1024" srcset="./img/site-content/slider-images/slide-3-tablet@1x.webp 1x, ./img/site-content/slider-images/slide-3-tablet@2x.webp 2x">
+                  <source type="image/webp" width="1440" heigth="800" srcset="./img/site-content/slider-images/slide-3-desktop@1x.webp 1x, ./img/site-content/slider-images/slide-3-desktop@1x.webp 2x">
+                  <source type="image/jpg" media="(max-width: 767px)" width="320" heigth="568" srcset="./img/site-content/slider-images/slide-3-mobile@1x.jpg 1x, ./img/site-content/slider-images/slide-3-mobile@2x.jpg 2x">
+                  <source type="image/jpg" media="(max-width: 1439px)" width="768" heigth="1024" srcset="./img/site-content/slider-images/slide-3-tablet@1x.jpg 1x, ./img/site-content/slider-images/slide-3-tablet@2x.jpg 2x">
+                  <img src="./img/site-content/slider-images/slide-3-desktop@1x.jpg" width="1440px" height="800" srcset="./img/site-content/slider-images/slide-3-desktop@2x.jpg 2x" alt="Фотография командная работа стажеров">
+                </picture>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </header>
+    <div data-test="about">about</div>
+    <div data-test="programs">programs</div>
+    <div data-test="grant">grant</div>
+    <div data-test="news">news</div>
+    <div data-test="FAQ">FAQ</div>
+    <div data-test="reviews">reviews</div>
+    <div data-test="contacts">contacts</div>
+    <div data-test="form">form</div>
+    <div data-test="footer">footer</div>
+  </div>
   <script type="module" src="js/main.js"></script>
 </body>
 
