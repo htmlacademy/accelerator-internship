@@ -1,0 +1,121 @@
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: space-between;
+  background-color: $color-transparent;
+}
+
+.navigation__logo {
+  display: flex;
+  width: 52px;
+  height: 52px;
+  background-color: $color-default-white;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+
+  & svg {
+    display: block;
+  }
+
+}
+
+.navigation__button {
+  display: flex;
+  width: 134px;
+  padding: 4px 4px 4px 20px;
+  gap: 19px;
+  justify-content: space-between;
+  background-color: $color-default-white;
+  border-radius: 30px;
+  border: 1px solid $color-cerulean-blue;
+
+  & span {
+    line-height: 14px;
+    font-size: 14px;
+    font-weight: 500;
+    color: $color-cerulean-blue;
+    text-transform: uppercase;
+  }
+
+}
+
+.navigation__button-wrapper {
+  display: flex;
+  width: 46px;
+  height: 46px;
+  background-color: $color-cerulean-blue;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+
+  & svg {
+    display: block;
+  }
+}
+
+.navigation__menu {
+  display: flex;
+  flex-direction: column;
+  min-width: 286px;
+  padding: 35px 25px;
+  position: absolute;
+  top: 70px;
+  right: 0;
+  background-color: $color-cerulean-blue;
+  border-radius: 16px;
+}
+
+.navigation__menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+.navigation__menu-link {
+  display: flex;
+  line-height: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  color: $color-default-white;
+  text-transform: uppercase;
+  opacity: 70%;
+}
+
+
+.navigation__internal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  list-style: none;
+}
+
+.navigation__internal-item {
+  margin-left: 41px;
+}
+
+.navigation__internal-link {
+  line-height: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  color: $color-default-white;
+  opacity: 50%;
+}
+
+.navigation__menu-icon {
+  display: flex;
+  align-items: center;
+
+  & svg {
+    margin-left: 6px;
+  }
+
+}

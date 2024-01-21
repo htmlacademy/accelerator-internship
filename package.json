@@ -43,6 +43,6 @@
     "w3c-html-validator": "1.6.1"
   },
   "dependencies": {
-    "swiper": "11.0.5"
+    "swiper": "^11.0.5"
   }
 }

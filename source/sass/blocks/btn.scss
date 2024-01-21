@@ -1,0 +1,21 @@
+.btn {
+  display: flex;
+  padding: 3px 3px 3px 30px;
+  align-items: center;
+  justify-content: space-between;
+  color: $color-cerulean-blue;
+  text-transform: uppercase;
+
+  background-color: $color-transparent;
+  border: 1px solid $color-transparent;
+  cursor: pointer;
+
+  transition: transform $trans-default;
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+}
