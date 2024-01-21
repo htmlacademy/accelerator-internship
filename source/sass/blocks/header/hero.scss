@@ -94,10 +94,28 @@
 }
 
 .hero__item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 4px 4px 4px 30px;
+  border-radius: 30px;
+  border: 1px solid $color-cerulean-blue;
 
-  & span {}
+  & span {
+    line-height: 14px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
 
-  & svg {}
+  & svg {
+    width: 46px;
+    height: 46px;
+    padding: 18px;
+    border-radius: 44px;
+    background-color: $color-cerulean-blue;
+  }
 }
 
 .hero__image {
