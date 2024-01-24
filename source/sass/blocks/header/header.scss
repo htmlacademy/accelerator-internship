@@ -9,7 +9,16 @@
   background-color: $color-transparent;
   z-index: 2;
 
+
   & .container {
-    padding-top: 30px;
+    padding-top: 31px;
+
+    @include vp-1439 {
+
+    }
+
+    @include vp-767 {
+
+    }
   }
 }
