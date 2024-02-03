@@ -1,17 +1,45 @@
 .about {
   margin-top: 119px;
 
-  & .container{
+  @include vp-1439 {
+    margin-top: 95px;
+  }
+
+  @include vp-767 {
+    margin-top: 58px;
+  }
+
+  & .container {
     display: flex;
     flex-direction: column;
     padding: 0 100px;
     gap: 60px;
+
+    @include vp-1439 {
+      padding: 0 45px;
+      gap: 61px;
+    }
+
+    @include vp-767 {
+      padding: 0 15px;
+      gap: 40px;
+    }
   }
 }
 
 .about__conten {
   display: flex;
   justify-content: space-between;
+
+  @include vp-1439 {
+    flex-direction: column;
+    gap: 29px;
+  }
+
+  @include vp-767 {
+    gap: 31px;
+  }
+
 }
 
 .about__titel {
@@ -20,6 +48,17 @@
   max-width: 40%;
   gap: 35px;
 
+  @include vp-1439 {
+    max-width: 73%;
+    gap: 25px;
+  }
+
+  @include vp-767 {
+    max-width: 100%;
+    gap: 13px;
+  }
+
+
   & h2 {
     margin: 0;
     margin-top: 4px;
@@ -27,6 +66,18 @@
     font-size: 50px;
     font-weight: 400;
     color: $color-cerulean-blue;
+
+    @include vp-1439 {
+      line-height: 50px;
+      font-size: 34px;
+
+    }
+
+    @include vp-767 {
+      line-height: 20px;
+      font-size: 20px;
+    }
+
   }
 
   & p {
@@ -35,6 +86,17 @@
     font-size: 22px;
     font-weight: 400;
     color: $color-charcoal;
+
+    @include vp-1439 {
+      line-height: 26px;
+      font-size: 20px;
+    }
+
+    @include vp-767 {
+      line-height: 22px;
+      font-size: 16px;
+    }
+
   }
 }
 
@@ -45,12 +107,35 @@
   margin-right: 108px;
   gap: 32px;
 
+  @include vp-1439 {
+    max-width: 73%;
+    gap: 23px;
+  }
+
+  @include vp-767 {
+    margin: 0;
+    max-width: 100%;
+    gap: 10px;
+  }
+
+
   & h3 {
     margin: 0;
     line-height: 36px;
     font-size: 32px;
     font-weight: 400;
     color: $color-cerulean-blue;
+
+    @include vp-1439 {
+      line-height: 28px;
+      font-size: 28px;
+    }
+
+    @include vp-767 {
+      line-height: 22px;
+      font-size: 18px;
+    }
+
   }
 
   & p {
@@ -60,12 +145,29 @@
     font-weight: 400;
     color: $color-charcoal;
     letter-spacing: 0.04px;
+
+    @include vp-1439 {
+      line-height: 20px;
+      letter-spacing: 0.02px;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+    }
+
   }
 }
 
 .about__information-wrapper {
   display: flex;
   margin-top: 1px;
+
+  @include vp-1439 {
+    margin-top: 12px;
+  }
+
+  @include vp-767 {}
+
 }
 
 .about__information-button {
@@ -76,10 +178,28 @@
   gap: 30px;
   letter-spacing: .2px;
 
+  @include vp-1439 {}
+
+  @include vp-767 {
+    width: 221px;
+    margin-top: 4px;
+    padding: 3px 3px 2px 19px;
+    gap: 15px;
+  }
+
+
   & span {
     line-height: 14px;
     font-size: 14px;
     font-weight: 500;
+
+    @include vp-1439 {}
+
+    @include vp-767 {
+      line-height: 12px;
+      font-size: 12px;
+    }
+
   }
 }
 
@@ -89,6 +209,20 @@
   padding-bottom: 32px;
   background-color: $color-cerulean-blue;
   border-radius: 20px;
+
+  @include vp-1439 {
+    padding: 40px 60px;
+    padding-top: 62px;
+    padding-right: 40px;
+  }
+
+  @include vp-767 {
+    padding: 40px 30px;
+    padding-top: 42px;
+    padding-right: 20px;
+
+  }
+
 }
 
 .about__features-list {
@@ -99,6 +233,17 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @include vp-1439 {
+    gap: 42px 50px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
 }
 
 .about__features-item {
@@ -107,6 +252,15 @@
   grid-template-columns: auto auto;
   border: 1px solid $color-alabaster;
   border-radius: 16px;
+
+  @include vp-1439 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include vp-767 {}
+
+
 
   &::before {
     position: absolute;
@@ -118,6 +272,16 @@
     background-repeat: no-repeat;
     background-color: $color-cerulean-blue;
     content: "";
+
+    @include vp-1439 {
+      left: -9px;
+    }
+
+    @include vp-767 {
+      top: -11px;
+      left: -7px;
+      background-image: url(/img/svg/star-mobile.svg);
+    }
   }
 
   & h3 {
@@ -130,6 +294,18 @@
     color: $color-default-white;
     text-transform: uppercase;
     letter-spacing: 0.2px;
+
+    @include vp-1439 {
+      line-height: 22px;
+      font-size: 20px;
+    }
+
+    @include vp-767 {
+      max-width: 203px;
+      line-height: 20px;
+      font-size: 16px;
+    }
+
   }
 
   & p {
@@ -138,6 +314,13 @@
     font-size: 16px;
     font-weight: 300;
     color: $color-alabaster;
+
+    @include vp-1439 {}
+
+    @include vp-767 {
+      font-size: 14px;
+    }
+
   }
 
   &--first-slot {
@@ -146,10 +329,12 @@
 
     @include vp-1439 {
       gap: 7px;
+      padding: 26px 39px 25px 29px;
     }
 
     @include vp-767 {
-      gap: 0;
+      gap: 4px;
+      padding: 15px 28px 23px 19px;
     }
   }
 
@@ -159,25 +344,48 @@
 
     @include vp-1439 {
       gap: 7px;
-      padding-right: 16px;
+      padding: 26px 10px 25px 29px;
     }
 
     @include vp-767 {
       gap: 4px;
-      padding-bottom: 23px;
+      padding: 15px 15px 23px 19px;
     }
   }
 
   &--third-slot {
     gap: 27px;
-    padding: 25px 27px 26px 53px;
+    padding: 22px 27px 26px 53px;
+
+    &::before {
+      top: -15px;
+    }
 
     @include vp-1439 {
       gap: 7px;
+      padding: 26px 27px 25px 29px;
+
+      & h3 {
+        padding-right: 30px;
+      }
+
+      &::before {
+        top: -13px;
+      }
+
     }
 
     @include vp-767 {
-      gap: 0;
+      gap: 4px;
+      padding: 15px 28px 23px 19px;
+
+      & h3 {
+        padding-right: 0;
+      }
+
+      &::before {
+        top: -11px;
+      }
     }
   }
 
@@ -187,11 +395,20 @@
 
     @include vp-1439 {
       gap: 7px;
-      padding-right: 16px;
+      padding: 26px 27px 25px 29px;
+
+      &::before {
+        top: -13px;
+      }
     }
 
     @include vp-767 {
-      gap: 0;
+      gap: 4px;
+      padding: 15px 19px 23px 19px;
+
+      &::before {
+        top: -11px;
+      }
     }
   }
 }
