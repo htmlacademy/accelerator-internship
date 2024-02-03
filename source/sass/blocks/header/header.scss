@@ -3,22 +3,22 @@
 }
 
 .header__navigation {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: auto;
   background-color: $color-transparent;
   z-index: 2;
+  transition: transform $trans-default;
 
+  &.is-hidden {
+    transform: translateY(-100%);
+  }
 
   & .container {
     padding-top: 31px;
 
-    @include vp-1439 {
-
-    }
-
     @include vp-767 {
-
+      padding-top: 21px;
     }
   }
 }

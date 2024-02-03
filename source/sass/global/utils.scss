@@ -15,6 +15,14 @@
   }
 }
 
+.scroll-lock-ios {
+  position: fixed;
+  overflow: hidden;
+}
+
+.scroll-lock {
+  overflow: hidden;
+}
 
 .visually-hidden {
   position: absolute;

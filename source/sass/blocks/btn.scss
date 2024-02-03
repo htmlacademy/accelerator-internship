@@ -18,4 +18,45 @@
     pointer-events: none;
   }
 
+  &__icon {
+    display: flex;
+
+    & svg {
+      width: 46px;
+      height: 46px;
+      padding: 18px;
+      border-radius: 44px;
+      background-color: $color-cerulean-blue;
+      stroke: $color-default-white;
+
+      @include vp-767 {
+        width: 34px;
+        height: 34px;
+        padding: 12px;
+      }
+    }
+  }
+
+
+  &--burger-button.is-opend {
+    width: 286px;
+    transition: $trans-default;
+    position: relative;
+    z-index: 4;
+
+    @include vp-767 {
+      width: 290px;
+    }
+
+  & .navigation__button-wrapper {
+    background-color: $color-default-white;
+  }
+    & svg:first-child {
+      display: none;
+    }
+
+    & svg:last-child {
+      display: block;
+    }
+  }
 }
