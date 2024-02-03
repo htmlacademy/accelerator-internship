@@ -12,9 +12,30 @@
 
   transition: transform $trans-default;
 
+  &:hover,
+  &:focus {
+    background-color: $color-cerulean-blue;
+    outline: none;
+    transition: $trans-default;
+
+    & span {
+      color: $color-default-white;
+    }
+
+    & svg {
+      background-color: $color-default-white;
+      stroke: $color-cerulean-blue;
+    }
+
+    &:active {
+      svg {
+        stroke: $color-cerulean-blue-05;
+      }
+    }
+  }
+
   &:disabled {
     opacity: 0.5;
-
     pointer-events: none;
   }
 

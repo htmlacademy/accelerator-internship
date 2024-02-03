@@ -1,0 +1,197 @@
+.about {
+  margin-top: 119px;
+
+  & .container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px;
+    gap: 60px;
+  }
+}
+
+.about__conten {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__titel {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+  gap: 35px;
+
+  & h2 {
+    margin: 0;
+    margin-top: 4px;
+    line-height: 50px;
+    font-size: 50px;
+    font-weight: 400;
+    color: $color-cerulean-blue;
+  }
+
+  & p {
+    margin: 0;
+    line-height: 32px;
+    font-size: 22px;
+    font-weight: 400;
+    color: $color-charcoal;
+  }
+}
+
+.about__information {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+  margin-right: 108px;
+  gap: 32px;
+
+  & h3 {
+    margin: 0;
+    line-height: 36px;
+    font-size: 32px;
+    font-weight: 400;
+    color: $color-cerulean-blue;
+  }
+
+  & p {
+    margin: 0;
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: 400;
+    color: $color-charcoal;
+    letter-spacing: 0.04px;
+  }
+}
+
+.about__information-wrapper {
+  display: flex;
+  margin-top: 1px;
+}
+
+.about__information-button {
+  max-width: 280px;
+  border: 1px solid $color-cerulean-blue;
+  border-radius: 30px;
+  padding: 4px 4px 2px 30px;
+  gap: 30px;
+  letter-spacing: .2px;
+
+  & span {
+    line-height: 14px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+.about__features {
+  padding: 72px 106px;
+  padding-left: 126px;
+  padding-bottom: 32px;
+  background-color: $color-cerulean-blue;
+  border-radius: 20px;
+}
+
+.about__features-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 55px 50px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about__features-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto;
+  border: 1px solid $color-alabaster;
+  border-radius: 16px;
+
+  &::before {
+    position: absolute;
+    top: -13px;
+    left: -8px;
+    width: 29px;
+    height: 32px;
+    background-image: url(/img/svg/star.svg);
+    background-repeat: no-repeat;
+    background-color: $color-cerulean-blue;
+    content: "";
+  }
+
+  & h3 {
+    margin: 0;
+    margin-top: 4px;
+    max-width: 171px;
+    line-height: 30px;
+    font-size: 26px;
+    font-weight: 400;
+    color: $color-default-white;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+  }
+
+  & p {
+    margin: 0;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    color: $color-alabaster;
+  }
+
+  &--first-slot {
+    gap: 9px;
+    padding: 25px 60px 25px 59px;
+
+    @include vp-1439 {
+      gap: 7px;
+    }
+
+    @include vp-767 {
+      gap: 0;
+    }
+  }
+
+  &--second-slot {
+    gap: 26px;
+    padding: 25px 60px 25px 59px;
+
+    @include vp-1439 {
+      gap: 7px;
+      padding-right: 16px;
+    }
+
+    @include vp-767 {
+      gap: 4px;
+      padding-bottom: 23px;
+    }
+  }
+
+  &--third-slot {
+    gap: 27px;
+    padding: 25px 27px 26px 53px;
+
+    @include vp-1439 {
+      gap: 7px;
+    }
+
+    @include vp-767 {
+      gap: 0;
+    }
+  }
+
+  &--last-slot {
+    gap: 16px;
+    padding: 23px 60px 26px 59px;
+
+    @include vp-1439 {
+      gap: 7px;
+      padding-right: 16px;
+    }
+
+    @include vp-767 {
+      gap: 0;
+    }
+  }
+}
