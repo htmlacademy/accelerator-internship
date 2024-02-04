@@ -10,7 +10,7 @@ const navigationOverlay = document.querySelector('[data-menu="navigation-overlay
 
 
 const onEscKeydown = (evt) => evt.key === 'Escape' ? closeMenu() : null;
-const onLinkClick = (evt) => evt.target.matches('[data-menu="burger-site-link"]') ? closeMenu() : null;
+const onLinkClick = (evt) => evt.target.matches('[data-navigation="navigation-link"]') ? closeMenu() : null;
 
 
 const openMenu = () => {

@@ -60,16 +60,19 @@
                   </a>
                   <ul class="navigation__internal-list" data-accordion="content">
                     <li class="navigation__internal-item">
-                      <a class="navigation__internal-link" href="#">Стажировки</a>
+                      <a class="navigation__internal-link" href="#programs"
+                        data-navigation="navigation-link">Стажировки</a>
                     </li>
                     <li class="navigation__internal-item">
-                      <a class="navigation__internal-link" href="#">Волонтёрство</a>
+                      <a class="navigation__internal-link" href="#programs"
+                        data-navigation="navigation-link">Волонтёрство</a>
                     </li>
                     <li class="navigation__internal-item">
-                      <a class="navigation__internal-link" href="#">Учёба</a>
+                      <a class="navigation__internal-link" href="#programs" data-navigation="navigation-link">Учёба</a>
                     </li>
                     <li class="navigation__internal-item">
-                      <a class="navigation__internal-link" href="#">Религия</a>
+                      <a class="navigation__internal-link" href="#programs"
+                        data-navigation="navigation-link">Религия</a>
                     </li>
                   </ul>
                 </li>
@@ -88,19 +91,19 @@
                   </a>
                   <ul class="navigation__internal-list" data-accordion="content">
                     <li class="navigation__internal-item">
-                      <a class="navigation__internal-link" href="#">Общее</a>
+                      <a class="navigation__internal-link" href="#" data-navigation="navigation-link">Общее</a>
                     </li>
                     <li class="navigation__internal-item">
-                      <a class="navigation__internal-link" href="#">Волонтёрство</a>
+                      <a class="navigation__internal-link" href="#" data-navigation="navigation-link">Волонтёрство</a>
                     </li>
                     <li class="navigation__internal-item">
-                      <a class="navigation__internal-link" href="#">Стажировки</a>
+                      <a class="navigation__internal-link" href="#" data-navigation="navigation-link">Стажировки</a>
                     </li>
                     <li class="navigation__internal-item">
-                      <a class="navigation__internal-link" href="#">Карьера</a>
+                      <a class="navigation__internal-link" href="#" data-navigation="navigation-link">Карьера</a>
                     </li>
                     <li class="navigation__internal-item">
-                      <a class="navigation__internal-link" href="#">Путешествия</a>
+                      <a class="navigation__internal-link" href="#" data-navigation="navigation-link">Путешествия</a>
                     </li>
                   </ul>
                 </li>
@@ -256,7 +259,7 @@
                 <a class="about__information-button btn" href="#">
                   <span>подробнее о проекте</span>
                   <div class="btn__icon">
-                    <svg role="img" focusable="false" aria-hidden="true">
+                    <svg width="8" height="8" viewBox="0 0 8 8" role="img" focusable="false" aria-hidden="true">
                       <use href="__spritemap#sprite-side-arrow"></use>
                     </svg>
                   </div>
@@ -294,26 +297,26 @@
 
       <section class="programs" data-test="programs" id="programs">
         <div class="container">
-          <div class="programs__titel">
-            <h2>Программы</h2>
-            <div class="programs__titel-wrapper">
-              <a class="programs__titel-button">
+          <div class="programs__wrapper">
+            <div class="programs__titel">
+              <h2>Программы</h2>
+              <a class="programs__titel-button btn" href="#">
                 <span>все программы</span>
                 <div class="btn__icon">
-                  <svg role="img" focusable="false" aria-hidden="true">
+                  <svg width="8" height="8" viewBox="0 0 8 8" role="img" focusable="false" aria-hidden="true">
                     <use href="__spritemap#sprite-side-arrow"></use>
                   </svg>
                 </div>
               </a>
             </div>
-            <div class="programs__slider" data-programs="swiper">
-              <ul class="programs__list">
-                <li class="programs__item">
+            <div class="programs__slider swiper" data-programs="swiper">
+              <ul class="programs__list swiper-wrapper">
+                <li class="programs__item swiper-slide">
+                  <h3>Стажировки</h3>
                   <div class="programs__item-content">
-                    <h3>Стажировки</h3>
                     <p>Получите незаменимый опыт работы в крупнейших мировых компаниях.</p>
-                    <a class="programs__item-link btn__icon">
-                      <svg role="img" focusable="false" aria-hidden="true">
+                    <a class="programs__item-link btn__icon" href="#">
+                      <svg width="8" height="8" viewBox="0 0 8 8" role="img" focusable="false" aria-hidden="true">
                         <use href="__spritemap#sprite-side-arrow"></use>
                       </svg>
                     </a>
@@ -336,12 +339,12 @@
                     </picture>
                   </div>
                 </li>
-                <li class="programs__item">
+                <li class="programs__item swiper-slide">
+                  <h3>Волонтёрство</h3>
                   <div class="programs__item-content">
-                    <h3>Волонтёрство</h3>
                     <p>Помогайте другим и развивайте свои лидерские качества.</p>
-                    <a class="programs__item-link btn__icon">
-                      <svg role="img" focusable="false" aria-hidden="true">
+                    <a class="programs__item-link btn__icon" href="#">
+                      <svg width="8" height="8" viewBox="0 0 8 8" role="img" focusable="false" aria-hidden="true">
                         <use href="__spritemap#sprite-side-arrow"></use>
                       </svg>
                     </a>
@@ -364,12 +367,96 @@
                     </picture>
                   </div>
                 </li>
-                <li class="programs__item">
+                <li class="programs__item swiper-slide">
+                  <h3>Учёба</h3>
                   <div class="programs__item-content">
-                    <h3>Учёба</h3>
                     <p>Получите образование и измените своё будущее.</p>
-                    <a class="programs__item-link btn__icon">
-                      <svg role="img" focusable="false" aria-hidden="true">
+                    <a class="programs__item-link btn__icon" href="#">
+                      <svg width="8" height="8" viewBox="0 0 8 8" role="img" focusable="false" aria-hidden="true">
+                        <use href="__spritemap#sprite-side-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="programs__item-image">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="290" height="400"
+                        srcset="./img/site-content/slider-images-program/program-photo3-mobile@1x.webp 1x, ./img/site-content/slider-images-program/program-photo3-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1439px)" width="324" height="420"
+                        srcset="./img/site-content/slider-images-program/program-photo3-tablet@1x.webp 1x, ./img/site-content/slider-images-program/program-photo3-tablet@2x.webp 2x">
+                      <source type="image/webp" width="392" height="420"
+                        srcset="./img/site-content/slider-images-program/program-photo3-desktop@1x.webp 1x, ./img/site-content/slider-images-program/program-photo3-desktop@2x.webp 2x">
+                      <source type="image/jpg" media="(max-width: 767px)" width="290" height="400"
+                        srcset="./img/site-content/slider-images-program/program-photo3-mobile@1x.jpg 1x, ./img/site-content/slider-images-program/program-photo3-mobile@2x.jpg 2x">
+                      <source type="image/jpg" media="(max-width: 1439px)" width="324" height="420"
+                        srcset="./img/site-content/slider-images-program/program-photo3-tablet@1x.jpg 1x, ./img/site-content/slider-images-program/program-photo3-tablet@2x.jpg 2x">
+                      <img src="./img/site-content/slider-images-program/program-photo3-desktop@1x.jpg" width="392"
+                        height="420" srcset="./img/site-content/slider-images-program/program-photo3-desktop@2x.jpg 2x"
+                        alt="Фотография студента.">
+                    </picture>
+                  </div>
+                </li>
+                <li class="programs__item swiper-slide">
+                  <h3>Стажировки</h3>
+                  <div class="programs__item-content">
+                    <p>Получите незаменимый опыт работы в крупнейших мировых компаниях.</p>
+                    <a class="programs__item-link btn__icon" href="#">
+                      <svg width="8" height="8" viewBox="0 0 8 8" role="img" focusable="false" aria-hidden="true">
+                        <use href="__spritemap#sprite-side-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="programs__item-image">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="290" height="400"
+                        srcset="./img/site-content/slider-images-program/program-photo1-mobile@1x.webp 1x, ./img/site-content/slider-images-program/program-photo1-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1439px)" width="324" height="420"
+                        srcset="./img/site-content/slider-images-program/program-photo1-tablet@1x.webp 1x, ./img/site-content/slider-images-program/program-photo1-tablet@2x.webp 2x">
+                      <source type="image/webp" width="392" height="420"
+                        srcset="./img/site-content/slider-images-program/program-photo1-desktop@1x.webp 1x, ./img/site-content/slider-images-program/program-photo1-desktop@2x.webp 2x">
+                      <source type="image/jpg" media="(max-width: 767px)" width="290" height="400"
+                        srcset="./img/site-content/slider-images-program/program-photo1-mobile@1x.jpg 1x, ./img/site-content/slider-images-program/program-photo1-mobile@2x.jpg 2x">
+                      <source type="image/jpg" media="(max-width: 1439px)" width="324" height="420"
+                        srcset="./img/site-content/slider-images-program/program-photo1-tablet@1x.jpg 1x, ./img/site-content/slider-images-program/program-photo1-tablet@2x.jpg 2x">
+                      <img src="./img/site-content/slider-images-program/program-photo1-desktop@1x.jpg" width="392"
+                        height="420" srcset="./img/site-content/slider-images-program/program-photo1-desktop@2x.jpg 2x"
+                        alt="Фотография стажеров.">
+                    </picture>
+                  </div>
+                </li>
+                <li class="programs__item swiper-slide">
+                  <h3>Волонтёрство</h3>
+                  <div class="programs__item-content">
+                    <p>Помогайте другим и развивайте свои лидерские качества.</p>
+                    <a class="programs__item-link btn__icon" href="#">
+                      <svg width="8" height="8" viewBox="0 0 8 8" role="img" focusable="false" aria-hidden="true">
+                        <use href="__spritemap#sprite-side-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="programs__item-image">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="290" height="400"
+                        srcset="./img/site-content/slider-images-program/program-photo2-mobile@1x.webp 1x, ./img/site-content/slider-images-program/program-photo2-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1439px)" width="324" height="420"
+                        srcset="./img/site-content/slider-images-program/program-photo2-tablet@1x.webp 1x, ./img/site-content/slider-images-program/program-photo2-tablet@2x.webp 2x">
+                      <source type="image/webp" width="392" height="420"
+                        srcset="./img/site-content/slider-images-program/program-photo2-desktop@1x.webp 1x, ./img/site-content/slider-images-program/program-photo2-desktop@2x.webp 2x">
+                      <source type="image/jpg" media="(max-width: 767px)" width="290" height="400"
+                        srcset="./img/site-content/slider-images-program/program-photo2-mobile@1x.jpg 1x, ./img/site-content/slider-images-program/program-photo2-mobile@2x.jpg 2x">
+                      <source type="image/jpg" media="(max-width: 1439px)" width="324" height="420"
+                        srcset="./img/site-content/slider-images-program/program-photo2-tablet@1x.jpg 1x, ./img/site-content/slider-images-program/program-photo2-tablet@2x.jpg 2x">
+                      <img src="./img/site-content/slider-images-program/program-photo2-desktop@1x.jpg" width="392"
+                        height="420" srcset="./img/site-content/slider-images-program/program-photo2-desktop@2x.jpg 2x"
+                        alt="Фотография волонтера за работой.">
+                    </picture>
+                  </div>
+                </li>
+                <li class="programs__item swiper-slide">
+                  <h3>Учёба</h3>
+                  <div class="programs__item-content">
+                    <p>Получите образование и измените своё будущее.</p>
+                    <a class="programs__item-link btn__icon" href="#">
+                      <svg width="8" height="8" viewBox="0 0 8 8" role="img" focusable="false" aria-hidden="true">
                         <use href="__spritemap#sprite-side-arrow"></use>
                       </svg>
                     </a>
@@ -394,7 +481,21 @@
                 </li>
               </ul>
             </div>
-            <div class="programs__scrollbar" data-programs="swiper-scrollbar"></div>
+            <div class="program__navigation">
+              <div class="programs__scrollbar" data-programs="swiper-scrollbar"></div>
+              <div class="program__navigation-button">
+                <div class="swiper-button-prev btn--icon-slider" data-programs="progran-swiper-prev">
+                  <svg width="10" height="10" viewBox="0 0 10 10" role="img" focusable="false" aria-hidden="true">
+                    <use href="__spritemap#sprite-arrow"></use>
+                  </svg>
+                </div>
+                <div class="swiper-button-next btn--icon-slider" data-programs="progran-swiper-next">
+                  <svg width="10" height="10" viewBox="0 0 10 10" role="img" focusable="false" aria-hidden="true">
+                    <use href="__spritemap#sprite-arrow"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

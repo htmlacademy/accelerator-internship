@@ -7,7 +7,7 @@
   text-transform: uppercase;
 
   background-color: $color-transparent;
-  border: 1px solid $color-transparent;
+  border: 1px solid $color-cerulean-blue;
   cursor: pointer;
 
   transition: transform $trans-default;
@@ -34,13 +34,108 @@
     }
   }
 
-  &:disabled {
-    opacity: 0.5;
+  &.is-disabled {
+    border: 1px solid $color-mischka;
     pointer-events: none;
+    color: $color-mischka;
+
+    & svg {
+      background-color: $color-mischka;
+    }
   }
+
+  &--burger-button.is-opend {
+    width: 286px;
+    transition: $trans-default;
+    position: relative;
+    z-index: 4;
+
+    @include vp-767 {
+      width: 290px;
+    }
+
+    & .navigation__button-wrapper {
+      background-color: $color-default-white;
+    }
+
+    & svg:first-child {
+      display: none;
+    }
+
+    & svg:last-child {
+      display: block;
+    }
+  }
+
+  &--burger-button {
+
+    &:hover,
+    &:focus {
+      background-color: $color-cerulean-blue;
+      outline: none;
+      transition: $trans-default;
+
+      & span {
+        color: $color-default-white;
+      }
+
+      & .navigation__button-wrapper {
+        background-color: $color-default-white;
+
+        & svg {
+          stroke: $color-cerulean-blue;
+        }
+      }
+    }
+
+    &.is-disabled {
+      color: $color-mischka;
+      border: 1px solid $color-mischka;
+      cursor: default;
+      pointer-events: none;
+
+      & .navigation__button-wrapper {
+        background-color: $color-mischka;
+
+        & svg {
+          stroke: $color-default-white;
+        }
+      }
+    }
+  }
+
 
   &__icon {
     display: flex;
+    transition: $trans-default;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      transition: $trans-default;
+
+      & svg {
+        background-color: $color-default-white;
+        stroke: $color-cerulean-blue;
+      }
+
+      &:active {
+        svg {
+          stroke: $color-cerulean-blue-05;
+        }
+      }
+
+    }
+
+    &.is-disabled {
+      pointer-events: none;
+
+      & svg {
+        stroke: $color-default-white;
+        background-color: $color-mischka;
+      }
+    }
+
 
     & svg {
       width: 46px;
@@ -58,26 +153,38 @@
     }
   }
 
-
-  &--burger-button.is-opend {
-    width: 286px;
+  &--icon-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21px;
+    height: 22px;
     transition: $trans-default;
-    position: relative;
-    z-index: 4;
 
-    @include vp-767 {
-      width: 290px;
+    & svg {
+      stroke: $color-cerulean-blue;
+      background-color: $color-transparent;
+      cursor: pointer;
     }
 
-  & .navigation__button-wrapper {
-    background-color: $color-default-white;
-  }
-    & svg:first-child {
-      display: none;
+    &:hover,
+    &:focus {
+      background-color: $color-default-white;
+      border-radius: 30px;
+      outline: none;
     }
 
-    & svg:last-child {
-      display: block;
+    &:active svg {
+      stroke: $color-cerulean-blue-05;
+    }
+
+    &.is-disabled {
+      background-color: $color-transparent;
+      pointer-events: none;
+
+      & svg {
+        stroke: $color-mischka;
+      }
     }
   }
 }

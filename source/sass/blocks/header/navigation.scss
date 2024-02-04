@@ -14,7 +14,7 @@
   border-radius: 30px;
   justify-content: center;
   align-items: center;
-  transform: $trans-default;
+  transition: $trans-default;
 
   &:hover,
   &:focus {
@@ -44,30 +44,12 @@
   background-color: $color-default-white;
   border-radius: 30px;
   border: 1px solid $color-cerulean-blue;
-
-  &:hover,
-  &:focus {
-    background-color: $color-cerulean-blue;
-    outline: none;
-    transition: $trans-default;
-
-    & span {
-      color: $color-default-white;
-    }
-
-    & .navigation__button-wrapper {
-      background-color: $color-default-white;
-      & svg {
-        stroke: $color-cerulean-blue;
-      }
-    }
-  }
+  color: $color-cerulean-blue;
 
   & span {
     line-height: 14px;
     font-size: 14px;
     font-weight: 500;
-    color: $color-cerulean-blue;
     text-transform: uppercase;
   }
 
