@@ -1,5 +1,5 @@
 .about {
-  margin-top: 119px;
+  margin-top: 118px;
 
   @include vp-1439 {
     margin-top: 95px;
@@ -22,7 +22,7 @@
 
     @include vp-767 {
       padding: 0 15px;
-      gap: 40px;
+      gap: 39px;
     }
   }
 }
@@ -30,14 +30,17 @@
 .about__conten {
   display: flex;
   justify-content: space-between;
+  margin-top: -4px;
 
   @include vp-1439 {
     flex-direction: column;
+    margin-top: -7px;
     gap: 29px;
   }
 
   @include vp-767 {
-    gap: 31px;
+    margin-top: -4px;
+    gap: 30px;
   }
 }
 
@@ -60,13 +63,14 @@
 
   h2 {
     margin: 0;
-    margin-top: 4px;
+    padding-top: 7px;
     line-height: 50px;
     font-size: 50px;
     font-weight: 400;
     color: $color-cerulean-blue;
 
     @include vp-1439 {
+      padding-top: 6px;
       line-height: 50px;
       font-size: 34px;
     }
@@ -101,7 +105,7 @@
   flex-direction: column;
   max-width: 40%;
   margin-right: 108px;
-  gap: 32px;
+  gap: 33px;
 
   @include vp-1439 {
     max-width: 73%;
@@ -111,18 +115,20 @@
   @include vp-767 {
     margin: 0;
     max-width: 100%;
-    gap: 10px;
+    gap: 11px;
   }
 
 
   h3 {
     margin: 0;
+    padding-top: 2px;
     line-height: 36px;
     font-size: 32px;
     font-weight: 400;
     color: $color-cerulean-blue;
 
     @include vp-1439 {
+      padding: 0;
       line-height: 28px;
       font-size: 28px;
     }
@@ -154,24 +160,31 @@
 
 .about__information-wrapper {
   display: flex;
-  margin-top: 1px;
 
   @include vp-1439 {
-    margin-top: 12px;
+    margin-top: 13px;
+  }
+
+  @include vp-767 {
+    margin-top: 10px;
   }
 }
 
 .about__information-button {
-  max-width: 280px;
   border-radius: 30px;
-  padding: 4px 4px 2px 30px;
-  gap: 30px;
-  letter-spacing: 0.2px;
+  padding: 3px 3px 3px 30px;
+  gap: 31px;
+  letter-spacing: 0.28px;
+
+  @include vp-1439 {
+    gap: 30px;
+    padding: 3px 3px 3px 30px;
+  }
 
   @include vp-767 {
     width: 221px;
     margin-top: 4px;
-    padding: 3px 3px 2px 19px;
+    padding: 3px 3px 3px 19px;
     gap: 15px;
   }
 
@@ -197,13 +210,13 @@
 
   @include vp-1439 {
     padding: 40px 60px;
-    padding-top: 62px;
+    padding-top: 61px;
     padding-right: 40px;
   }
 
   @include vp-767 {
     padding: 40px 30px;
-    padding-top: 42px;
+    padding-top: 43px;
     padding-right: 20px;
   }
 }
@@ -212,7 +225,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
-  gap: 55px 50px;
+  gap: 54px 52px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -243,8 +256,8 @@
   &::before {
     position: absolute;
     top: -13px;
-    left: -8px;
-    width: 29px;
+    left: -9px;
+    width: 30px;
     height: 32px;
     background-image: url("/img/svg/star.svg");
     background-repeat: no-repeat;
@@ -258,20 +271,23 @@
     @include vp-767 {
       top: -11px;
       left: -7px;
+      width: 28px;
+      height: 30px;
       background-image: url("/img/svg/star-mobile.svg");
     }
   }
 
   h3 {
     margin: 0;
-    margin-top: 4px;
+    padding-top: 4px;
+    width: 100%;
     max-width: 171px;
     line-height: 30px;
     font-size: 26px;
     font-weight: 400;
     color: $color-default-white;
     text-transform: uppercase;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.26px;
 
     @include vp-1439 {
       line-height: 22px;
@@ -279,9 +295,10 @@
     }
 
     @include vp-767 {
-      max-width: 203px;
+      max-width: 204px;
       line-height: 20px;
       font-size: 16px;
+      letter-spacing: 0.16px;
     }
   }
 
@@ -314,7 +331,7 @@
 }
 
 .about__features-item--second-slot {
-  gap: 26px;
+  gap: 24px;
   padding: 25px 60px 25px 59px;
 
   @include vp-1439 {
@@ -329,12 +346,8 @@
 }
 
 .about__features-item--third-slot {
-  gap: 27px;
-  padding: 22px 27px 26px 53px;
-
-  &::before {
-    top: -15px;
-  }
+  gap: 26px;
+  padding: 25px 27px 26px 53px;
 
   @include vp-1439 {
     gap: 7px;
@@ -364,12 +377,16 @@
 }
 
 .about__features-item--last-slot {
-  gap: 16px;
-  padding: 23px 60px 26px 59px;
+  gap: 15px;
+  padding: 25px 60px 25px 59px;
+
+  &::before {
+    left: -9px;
+  }
 
   @include vp-1439 {
     gap: 7px;
-    padding: 26px 27px 25px 29px;
+    padding: 26px 17px 25px 29px;
 
     &::before {
       top: -13px;
@@ -382,6 +399,15 @@
 
     &::before {
       top: -11px;
+      left: -7px;
+    }
+
+    p .mobile-hidden {
+      display: none;
+    }
+
+    h3 {
+      width: 201px;
     }
   }
 }

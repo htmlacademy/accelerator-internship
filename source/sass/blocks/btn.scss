@@ -190,13 +190,13 @@
 }
 
 .btn__icon {
-  height: 46px;
-  border-radius: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $color-cerulean-blue;
   width: 46px;
+  height: 46px;
+  border-radius: 44px;
+  background-color: $color-cerulean-blue;
   transition: $trans-default;
 
   @include vp-767 {
