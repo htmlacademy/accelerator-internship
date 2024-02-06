@@ -2,21 +2,14 @@
 @import "vendor/data-accordion";
 @import "mixins";
 @import "variables";
-
-
-//Global
-
 @import "global/container";
 @import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
-
-
-//Blokcs
-
-@import "blocks/btn.scss";
+@import "blocks/btn";
+@import "blocks/swiper";
 @import "blocks/header/header";
 @import "blocks/header/navigation";
 @import "blocks/header/hero";
-@import "blocks/main/about.scss";
-@import "blocks/main/programs.scss";
+@import "blocks/main/about";
+@import "blocks/main/programs";

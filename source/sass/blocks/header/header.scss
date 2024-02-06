@@ -10,15 +10,15 @@
   z-index: 2;
   transition: transform $trans-default;
 
-  &.is-hidden {
-    transform: translateY(-100%);
-  }
-
-  & .container {
+  .container {
     padding-top: 31px;
 
     @include vp-767 {
       padding-top: 21px;
     }
   }
+}
+
+.header__navigation.is-hidden {
+  transform: translateY(-100%);
 }

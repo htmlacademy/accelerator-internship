@@ -9,7 +9,7 @@
     margin-top: 58px;
   }
 
-  & .container {
+  .container {
     display: flex;
     flex-direction: column;
     padding: 0 100px;
@@ -39,7 +39,6 @@
   @include vp-767 {
     gap: 31px;
   }
-
 }
 
 .about__titel {
@@ -59,7 +58,7 @@
   }
 
 
-  & h2 {
+  h2 {
     margin: 0;
     margin-top: 4px;
     line-height: 50px;
@@ -70,17 +69,15 @@
     @include vp-1439 {
       line-height: 50px;
       font-size: 34px;
-
     }
 
     @include vp-767 {
       line-height: 20px;
       font-size: 20px;
     }
-
   }
 
-  & p {
+  p {
     margin: 0;
     line-height: 32px;
     font-size: 22px;
@@ -96,7 +93,6 @@
       line-height: 22px;
       font-size: 16px;
     }
-
   }
 }
 
@@ -119,7 +115,7 @@
   }
 
 
-  & h3 {
+  h3 {
     margin: 0;
     line-height: 36px;
     font-size: 32px;
@@ -135,10 +131,9 @@
       line-height: 22px;
       font-size: 18px;
     }
-
   }
 
-  & p {
+  p {
     margin: 0;
     line-height: 26px;
     font-size: 16px;
@@ -154,7 +149,6 @@
     @include vp-767 {
       font-size: 14px;
     }
-
   }
 }
 
@@ -172,7 +166,7 @@
   border-radius: 30px;
   padding: 4px 4px 2px 30px;
   gap: 30px;
-  letter-spacing: .2px;
+  letter-spacing: 0.2px;
 
   @include vp-767 {
     width: 221px;
@@ -182,18 +176,15 @@
   }
 
 
-  & span {
+  span {
     line-height: 14px;
     font-size: 14px;
     font-weight: 500;
-
-    @include vp-1439 {}
 
     @include vp-767 {
       line-height: 12px;
       font-size: 12px;
     }
-
   }
 }
 
@@ -214,9 +205,7 @@
     padding: 40px 30px;
     padding-top: 42px;
     padding-right: 20px;
-
   }
-
 }
 
 .about__features-list {
@@ -237,7 +226,6 @@
     flex-direction: column;
     gap: 22px;
   }
-
 }
 
 .about__features-item {
@@ -252,17 +240,13 @@
     flex-direction: column;
   }
 
-  @include vp-767 {}
-
-
-
   &::before {
     position: absolute;
     top: -13px;
     left: -8px;
     width: 29px;
     height: 32px;
-    background-image: url(/img/svg/star.svg);
+    background-image: url("/img/svg/star.svg");
     background-repeat: no-repeat;
     background-color: $color-cerulean-blue;
     content: "";
@@ -274,11 +258,11 @@
     @include vp-767 {
       top: -11px;
       left: -7px;
-      background-image: url(/img/svg/star-mobile.svg);
+      background-image: url("/img/svg/star-mobile.svg");
     }
   }
 
-  & h3 {
+  h3 {
     margin: 0;
     margin-top: 4px;
     max-width: 171px;
@@ -299,110 +283,105 @@
       line-height: 20px;
       font-size: 16px;
     }
-
   }
 
-  & p {
+  p {
     margin: 0;
     line-height: 20px;
     font-size: 16px;
     font-weight: 300;
     color: $color-alabaster;
 
-    @include vp-1439 {}
-
     @include vp-767 {
       font-size: 14px;
     }
+  }
+}
 
+.about__features-item--first-slot {
+  gap: 9px;
+  padding: 25px 60px 25px 59px;
+
+  @include vp-1439 {
+    gap: 7px;
+    padding: 26px 39px 25px 29px;
   }
 
-  &--first-slot {
-    gap: 9px;
-    padding: 25px 60px 25px 59px;
+  @include vp-767 {
+    gap: 4px;
+    padding: 15px 28px 23px 19px;
+  }
+}
 
-    @include vp-1439 {
-      gap: 7px;
-      padding: 26px 39px 25px 29px;
-    }
+.about__features-item--second-slot {
+  gap: 26px;
+  padding: 25px 60px 25px 59px;
 
-    @include vp-767 {
-      gap: 4px;
-      padding: 15px 28px 23px 19px;
-    }
+  @include vp-1439 {
+    gap: 7px;
+    padding: 26px 10px 25px 29px;
   }
 
-  &--second-slot {
-    gap: 26px;
-    padding: 25px 60px 25px 59px;
+  @include vp-767 {
+    gap: 4px;
+    padding: 15px 15px 23px 19px;
+  }
+}
 
-    @include vp-1439 {
-      gap: 7px;
-      padding: 26px 10px 25px 29px;
-    }
+.about__features-item--third-slot {
+  gap: 27px;
+  padding: 22px 27px 26px 53px;
 
-    @include vp-767 {
-      gap: 4px;
-      padding: 15px 15px 23px 19px;
-    }
+  &::before {
+    top: -15px;
   }
 
-  &--third-slot {
-    gap: 27px;
-    padding: 22px 27px 26px 53px;
+  @include vp-1439 {
+    gap: 7px;
+    padding: 26px 27px 25px 29px;
+
+    h3 {
+      padding-right: 30px;
+    }
 
     &::before {
-      top: -15px;
-    }
-
-    @include vp-1439 {
-      gap: 7px;
-      padding: 26px 27px 25px 29px;
-
-      & h3 {
-        padding-right: 30px;
-      }
-
-      &::before {
-        top: -13px;
-      }
-
-    }
-
-    @include vp-767 {
-      gap: 4px;
-      padding: 15px 28px 23px 19px;
-
-      & h3 {
-        padding-right: 0;
-      }
-
-      &::before {
-        top: -11px;
-      }
+      top: -13px;
     }
   }
 
-  &--last-slot {
-    gap: 16px;
-    padding: 23px 60px 26px 59px;
+  @include vp-767 {
+    gap: 4px;
+    padding: 15px 28px 23px 19px;
 
-    @include vp-1439 {
-      gap: 7px;
-      padding: 26px 27px 25px 29px;
-
-      &::before {
-        top: -13px;
-      }
+    h3 {
+      padding-right: 0;
     }
 
-    @include vp-767 {
-      gap: 4px;
-      padding: 15px 19px 23px 19px;
+    &::before {
+      top: -11px;
+    }
+  }
+}
 
-      &::before {
-        top: -11px;
-      }
+.about__features-item--last-slot {
+  gap: 16px;
+  padding: 23px 60px 26px 59px;
+
+  @include vp-1439 {
+    gap: 7px;
+    padding: 26px 27px 25px 29px;
+
+    &::before {
+      top: -13px;
+    }
+  }
+
+  @include vp-767 {
+    gap: 4px;
+    padding: 15px 19px 23px;
+
+    &::before {
+      top: -11px;
     }
   }
 }

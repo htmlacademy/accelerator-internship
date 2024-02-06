@@ -1,0 +1,18 @@
+.swiper-pagination.hero__pagination {
+  position: relative;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal.hero__pagination {
+  bottom: 0;
+  width: fit-content;
+  height: fit-content;
+}
+
+.swiper-slide.hero__item {
+  display: flex;
+}
+
+.swiper-slide.programs__item {
+  display: flex;
+}
+
