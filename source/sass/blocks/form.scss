@@ -1,0 +1,298 @@
+.modal {
+  display: none;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    padding: 90px 40px;
+    padding-bottom: 100px;
+  }
+}
+
+.modal__wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 510px;
+  min-height: 611px;
+  margin: 0;
+  padding: 60px 80px;
+  padding-top: 45px;
+  gap: 20px;
+  background-color: $color-default-white;
+  border-radius: 16px;
+
+  @include vp-1439 {
+    min-height: 602px;
+  }
+
+  @include vp-1439 {
+    max-width: 290px;
+    gap: 15px;
+  }
+}
+
+.modal__closed {
+  position: absolute;
+  top: 45px;
+  right: 45px;
+  width: 22px;
+  height: 22px;
+  border: none;
+  background-color: $color-transparent;
+
+  svg {
+    stroke: $color-cerulean-blue;
+  }
+}
+
+.modal__titel {
+  text-align: center;
+
+  h2 {
+    line-height: 36px;
+    font-size: 32px;
+    font-weight: 400;
+    color: $color-cerulean-blue;
+
+    @include vp-1439 {
+      line-height: 28px;
+      font-size: 28px;
+    }
+
+    @include vp-767 {
+      line-height: 18px;
+      font-size: 18px;
+    }
+  }
+
+  p {
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: 400;
+    color: $color-charcoal;
+
+
+    @include vp-1439 {
+      line-height: 20px;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+    }
+  }
+}
+
+.modal__form {
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+    @include vp-767 {
+      gap: 15px;
+    }
+  }
+}
+
+.form__wrapper {
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  span {
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 400;
+    color: $color-charcoal;
+
+    @include vp-1439 {
+      line-height: 20px;
+    }
+
+    @include vp-767 {
+      line-height: 14px;
+    }
+  }
+
+  input {
+    width: 350px;
+    height: 50px;
+    border: 1px solid $color-charcoal;
+    border-radius: 8px;
+    color: $color-charcoal;
+  }
+}
+
+.form__container-button {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  span {
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 400;
+    color: $color-charcoal;
+
+    @include vp-1439 {
+      line-height: 20px;
+    }
+
+    @include vp-767 {
+      line-height: 14px;
+    }
+  }
+}
+
+.from__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 350px;
+  height: 50px;
+  border: 1px solid $color-charcoal;
+  border-radius: 8px;
+  color: $color-charcoal;
+  background-color: $color-transparent;
+}
+
+.form__button-text {
+  line-height: 14px;
+  font-size: 14px;
+  font-weight: 400;
+  color: $color-charcoal;
+
+  @include vp-1439 {
+    line-height: 20px;
+  }
+
+  @include vp-767 {
+    line-height: 14px;
+  }
+}
+
+.form__button-icon {
+  display: flex;
+  width: 15px;
+  height: 15px;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    stroke: $color-charcoal;
+  }
+}
+
+.form__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 1px solid $color-charcoal;
+  border-radius: 8px;
+}
+
+.form__item {
+  padding: 17px 20px;
+  line-height: 14px;
+  font-size: 14px;
+  font-weight: 400;
+  color: $color-charcoal;
+
+  @include vp-1439 {
+    line-height: 20px;
+  }
+
+  @include vp-767 {
+    line-height: 14px;
+  }
+}
+
+.form__toggle {
+  display: flex;
+  justify-content: space-between;
+
+  input {
+    width: 20px;
+    height: 20px;
+    border: 1px solid $color-default-white;
+  }
+
+  span + span {
+    line-height: 12px;
+    font-size: 12px;
+    font-weight: 400;
+    color: $color-charcoal;
+
+    @include vp-767 {
+      line-height: 14px;
+    }
+  }
+}
+
+.form__toggle span {
+  &::after {
+    content: "";
+  }
+
+  &::before {
+    content: "";
+  }
+}
+
+
+.from__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include vp-767 {
+    position: relative;
+    flex-direction: row;
+    max-width: 194px;
+    width: 100%;
+    padding: 6px 15px 10px;
+    background-color: $color-default-white;
+    border-radius: 0 0 14px 14px;
+  }
+}
+
+.from__button-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  padding: 3px 3px 3px 31px;
+  gap: 30px;
+  border-radius: 30px;
+
+  @include vp-1439 {
+    margin-top: 3px;
+    padding: 3px 3px 3px 31px;
+  }
+
+  @include vp-767 {
+    gap: 19px;
+    margin-top: 4px;
+    padding-left: 20px;
+    letter-spacing: 0.3px;
+  }
+
+  span {
+    line-height: 14px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    @include vp-767 {
+      line-height: 12px;
+      font-size: 12px;
+    }
+  }
+}

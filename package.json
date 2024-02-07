@@ -19,11 +19,10 @@
   },
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "^2.0.8",
-    "@linthtml/linthtml": "0.9.5",
+    "@linthtml/linthtml": "^0.9.5",
     "@ls-lint/ls-lint": "2.1.0",
     "@spiriit/vite-plugin-svg-spritemap": "2.2.3",
     "@vitest/ui": "^0.34.6",
-    "vitest": "^0.34.6",
     "autoprefixer": "10.4.16",
     "backstopjs": "6.2.2",
     "cli-progress": "3.12.0",
@@ -31,7 +30,7 @@
     "eslint-config-htmlacademy": "^10.0.1",
     "glob": "10.3.10",
     "html-validate": "8.7.4",
-    "linthtml-config-htmlacademy": "^1.0.14",
+    "linthtml-config-htmlacademy": "^1.0.16",
     "sass": "1.69.5",
     "sharp": "0.33.0",
     "stylelint": "16.0.2",
@@ -42,6 +41,7 @@
     "vite": "5.0.11",
     "vite-plugin-image-optimizer": "1.1.7",
     "vite-plugin-minify": "^1.5.2",
+    "vitest": "^0.34.6",
     "w3c-html-validator": "1.6.1"
   },
   "dependencies": {

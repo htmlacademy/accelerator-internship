@@ -1,4 +1,17 @@
-// Vendor
-// ---------------------------------
-
 @import "vendor/normalize";
+@import "vendor/data-accordion";
+@import "mixins";
+@import "variables";
+@import "global/container";
+@import "global/fonts";
+@import "global/reboot";
+@import "global/utils";
+@import "blocks/btn";
+@import "blocks/form";
+@import "blocks/swiper";
+@import "blocks/header/header";
+@import "blocks/header/navigation";
+@import "blocks/header/hero";
+@import "blocks/main/about";
+@import "blocks/main/programs";
+
