@@ -303,7 +303,7 @@
               <a class="programs__titel-button btn" href="#">
                 <span>все программы</span>
                 <div class="btn__icon">
-                  <svg width="8" height="8" viewBox="0 0 8 8" role="img" focusable="false" aria-hidden="true">
+                  <svg width="10" height="10" viewBox="0 0 10 10" role="img" focusable="false" aria-hidden="true">
                     <use href="__spritemap#sprite-side-arrow"></use>
                   </svg>
                 </div>
@@ -316,7 +316,7 @@
                   <div class="programs__item-content">
                     <p>Получите незаменимый опыт работы в крупнейших мировых компаниях.</p>
                     <a class="programs__item-link btn__icon" href="#" aria-label="Больше информации, можно найти тут.">
-                      <svg width="8" height="8" viewBox="0 0 8 8" role="img" focusable="false" aria-hidden="true">
+                      <svg width="10" height="10" viewBox="0 0 10 10" role="img" focusable="false" aria-hidden="true">
                         <use href="__spritemap#sprite-side-arrow"></use>
                       </svg>
                     </a>
@@ -485,12 +485,12 @@
               <div class="programs__scrollbar" data-programs="swiper-scrollbar"></div>
               <div class="program__navigation-button">
                 <div class="swiper-button-prev btn--icon-slider" data-programs="progran-swiper-prev">
-                  <svg width="10" height="10" viewBox="0 0 10 10" role="img" focusable="false" aria-hidden="true">
+                  <svg width="12" height="12" viewBox="0 0 12 12" role="img" focusable="false" aria-hidden="true">
                     <use href="__spritemap#sprite-arrow"></use>
                   </svg>
                 </div>
                 <div class="swiper-button-next btn--icon-slider" data-programs="progran-swiper-next">
-                  <svg width="10" height="10" viewBox="0 0 10 10" role="img" focusable="false" aria-hidden="true">
+                  <svg width="12" height="12" viewBox="0 0 12 12" role="img" focusable="false" aria-hidden="true">
                     <use href="__spritemap#sprite-arrow"></use>
                   </svg>
                 </div>
@@ -499,17 +499,82 @@
           </div>
         </div>
       </section>
+
+      <div data-test="grant">grant</div>
+      <div data-test="news">news</div>
+      <div data-test="FAQ">FAQ</div>
+      <div data-test="reviews">reviews</div>
+      <div data-test="contacts">contacts</div>
+      <div data-test="form">form</div>
     </main>
-    <div data-test="grant">grant</div>
-    <div data-test="news">news</div>
-    <div data-test="FAQ">FAQ</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="contacts">contacts</div>
-    <div data-test="form">form</div>
     <footer>
       <div data-test="footer">footer</div>
     </footer>
   </div>
+
+  <div class="modal" data-modal="about-modal">
+    <div class="container">
+      <div class="modal__wrapper">
+        <button class="modal__closed" type="button" aria-label="Закрытие окна формы">
+          <svg width="16" height="16" viewBox="0 0 16 16" role="img" focusable="false" aria-hidden="true">
+            <use href="__spritemap#sprite-menu-closed"></use>
+          </svg>
+        </button>
+        <div class="modal__titel">
+          <h2>Напишите нам</h2>
+          <p>Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
+        </div>
+        <div class="modal__form">
+          <form action="https://echo.htmlacademy.ru/" method="post" data-modal="form-modal">
+            <div class="form__wrapper">
+              <label>
+                <span>Имя</span>
+                <input type="text" name="name" required autocomplete="off">
+              </label>
+            </div>
+            <div class="form__wrapper">
+              <label>
+                <span>Телефон</span>
+                <input type="text" name="phone" required autocomplete="off">
+              </label>
+            </div>
+            <div class="form__container-button">
+              <span>Выберите город</span>
+              <button class="from__button" type="button" aria-label="Выберите город.">
+                <span class="form__button-text"></span>
+                <span class="form__button-icon">
+                  <svg width="12" height="12" viewBox="0 0 12 12" role="img" focusable="false" aria-hidden="true">
+                    <use href="__spritemap#sprite-down-arrow"></use>
+                  </svg>
+                </span>
+              </button>
+              <ul class="form__list">
+                <li class="form__item">Москва</li>
+                <li class="form__item">Санкт-Петербург</li>
+                <li class="form__item">Магадан</li>
+              </ul>
+            </div>
+            <div class="form__toggle">
+              <input type="checkbox" value="agree" name="user-agreement" aria-label="Обработку персональных данных.">
+              <span class="form__toggle-check"></span>
+              <span>Я согласен на обработку моих персональных данных</span>
+            </div>
+            <div class="from__button-wrapper">
+              <button class="from__button-link btn" type="submit">
+                <span>отправить</span>
+                <span class="btn__icon">
+                  <svg width="10" height="10" viewBox="0 0 10 10" role="img" focusable="false" aria-hidden="true">
+                    <use href="__spritemap#sprite-side-arrow"></use>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script type="module" src="js/main.js"></script>
 </body>
 
